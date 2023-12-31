@@ -1,0 +1,105 @@
+Certainly! Below is a basic HTML, CSS, and JavaScript code structure for a website using Bootstrap. This example assumes you have included the Bootstrap CDN in your HTML file.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bootstrap Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom styles here */
+        body {
+            padding-top: 56px; /* Adjust according to your navigation bar height */
+
+             /* You can set a background color as a fallback */
+    background-color: #f4f4f4;
+    
+    /* Set the background image */
+    background-image: url('https://i.pinimg.com/736x/d8/bc/4d/d8bc4d37716479e44d322d903ff6361a.jpg');
+    
+    /* Background image properties */
+    background-size: cover; /* or contain, depending on your preference */
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    /* Specify a fixed height or use 100% for full height */
+    height: 100vh; 
+
+        }
+
+    /* Banner Container */
+.banner {
+    /* Set background color or background image */
+    background-color: rgba(105, 90, 205, 0.295); /* Replace with your preferred color */
+    /* background-image: url('path/to/your/image.jpg'); */ /* Uncomment and replace with image path if using an image */
+    
+    /* Text color and padding */
+    color: #fff; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+
+    /* Text alignment and font properties */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Example: Adding a subtle box-shadow to the banner */
+.banner {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+      
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="">FPC </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container mt-4">
+       <div class="row">
+        <div class="col banner">
+            <marquee behavior="" direction="left"><h1>Happy New Year 2024!</h1></marquee>
+            
+            <p>Embrace the new year with joy, optimism, and the determination to achieve your dreams. May this year bring you success, happiness, and countless new opportunities. Cheers to a year of growth and prosperity!</p>
+
+
+        </div>
+       </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
